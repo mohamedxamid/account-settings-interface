@@ -165,3 +165,45 @@ img {
 .profile-settings-form-action:not(:last-child) {
     margin-right: 40px;
 }
+
+@media only screen and (max-width: 600px) {
+    .profile-settings-form-row {
+        flex-direction: column;
+    }
+
+    .profile-settings-form-row .profile-settings-form-group {
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .profile-settings-form-row .profile-settings-form-group:not(:last-child) {
+        margin-bottom: 24px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .main-content {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+
+    .container {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .profile-settings-form-body {
+        left: 0;
+    }
+
+    .profile-settings-form {
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .profile-settings-form-header {
+        padding: 40px 0;
+    }
+}
